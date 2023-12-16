@@ -1,44 +1,54 @@
 var quote = [
-  `   <p>
-"The best revenge is massive success."
-<br />
---Frank Sinatra
-</p>`,
-
-  `<p>
-“Be yourself; everyone else is already taken.”
-<br />
-― Oscar Wilde</p> `,
-
-  `<p>“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.”
-  <br />
-  ― Bernard M. Baruch</p>`,
-
-  ` <p>
-  “Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”
-    <br />
-     ― Albert Einstein
-    </p>`,
-  `<p>“I'm selfish, impatient and a little insecure. I make mistakes, I am out of control and at times hard to handle. But if you can't handle me at my worst, then you sure as hell don't deserve me at my best.”
-    <br />
-     ― Marilyn Monroe</p>`,
+  {
+    author: "Jim Rohn",
+    quote: "Beware of what you become in pursuit of what you want.",
+  },
+  {
+    author: "Epictetus",
+    quote:
+      "It's not what happens to you, but how you react to it that matters.",
+  },
+  { author: "Frank Sinatra", quote: "The best revenge is massive success." },
+  {
+    author: "Wayne Gretzy",
+    quote: "You miss 100% of the shots you don't take.",
+  },
+  {
+    author: "Nelson Mandela",
+    quote:
+      "Resentment is like drinking poison and waiting for your enemies to die.",
+  },
+  {
+    author: "Elbert Hubbard",
+    quote: "Do not take life too seriously. You will not get out alive.",
+  },
 ];
 
 // by using random function
-/*function addQuote() {
-   const randomNum = Number.parseInt(Math.random() * quote.length);
-   document.getElementById("demo").innerHTML = quote[randomNum];
-}*/
-/*by using counter*/
-document.getElementById("demo").innerHTML = quote[0];
-var cartona = "";
-var i = 0;
+document.getElementById("quoteOutput").innerHTML = ` ${quote[0].quote}`;
+document.getElementById(
+  "authorOutput"
+).innerHTML = `--${quote[randomNum].author}`;
 function addQuote() {
-  if (i === quote.length - 1) {
-    i = 0;
-  } else {
-    cartona = quote[i++];
-  }
-
-  document.getElementById("demo").innerHTML = cartona;
+  const randomNum = Number.parseInt(Math.random() * quote.length);
+  document.getElementById(
+    "quoteOutput"
+  ).innerHTML = `\"${quote[randomNum].quote}\"`;
+  document.getElementById(
+    "authorOutput"
+  ).innerHTML = `--${quote[randomNum].author}`;
 }
+
+/*by using counter*/
+// document.getElementById("demo").innerHTML = quote[0];
+// var cartona = "";
+// var i = 0;
+// function addQuote() {
+//   if (i === quote.length - 1) {
+//     i = 0;
+//   } else {
+//     cartona = quote[i++];
+//   }
+
+//   document.getElementById("demo").innerHTML = cartona;
+// }
