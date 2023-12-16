@@ -1,23 +1,52 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+#quote {
+  height: 100vh;
+
+  background-image: url(../white-grunge-paint-yellow-background_1409-2076.jpg);
+  background-position: center;
+  background-size: cover contain;
+  background-repeat: repeat;
+}
 #quote h1 {
   color: black;
-  font-size: 80px;
+  font-size: 55px;
   font-weight: 700;
+  font-family: "Dancing Script", cursive;
+}
+#quote h1 span {
+  color: rgba(221, 176, 25, 0.859);
+}
+#quote .body {
 }
 #quote p {
   color: black;
-  font-size: 35px;
+  width: 70vh;
+  font-size: 20px;
   font-weight: 400;
 }
 #quote button {
   color: white;
-  width: 300px;
+  width: 200px;
   height: 100px;
-  background-color: rgb(0, 115, 255);
-  transition: all 0.6s 0s ease-in-out;
+  background-color: rgba(221, 176, 25, 0.859);
+  transition: all 0.3s 0s ease-in-out;
 }
 #quote button:hover {
-  background-color: rgb(35, 142, 53);
+  background-color: rgba(26, 26, 25, 0.859);
+}
+#quote .body {
+  position: relative;
+}
+#quote .stick {
+  height: 30px;
+  width: 118px;
+  background-color: rgba(95, 74, 26, 0.711);
+  position: absolute;
+  transform: rotate(146deg);
+  right: 32px;
+  left: -34px;
+  bottom: 13px;
+  top: 6px;
 }
